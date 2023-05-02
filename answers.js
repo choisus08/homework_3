@@ -72,6 +72,36 @@ for (let upperName of ninjaTurtles) {
 // Methods, Revisited
 ////////////////////////////////
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch'];
+
+
+console.log(favMovies.indexOf('Titanic'));
+
+console.log(favMovies.sort());
+
+favMovies.pop();
+console.log(favMovies);
+
+favMovies.push('Guardians of the Galaxy')
+console.log(favMovies);
+
+console.log(favMovies.reverse());
+
+favMovies.shift();
+console.log(favMovies);
+
+favMovies.unshift('Across the Universe');
+console.log(favMovies);
+
+favMovies.splice(14, 1, "Avatar");
+console.log(favMovies);
+
+const favMovies2 = favMovies.slice(10);
+console.log(favMovies2);
+
+console.log(favMovies.indexOf('Fast and Furious')); 
+// output will be -1 when trying to fetch something in an array that doesn't exist.
+
 
 ////////////////////////////////
 // Where is Waldo
