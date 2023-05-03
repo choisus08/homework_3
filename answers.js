@@ -128,6 +128,23 @@ console.log(whereIsWaldo[2][1][1]);
 //  Excited Kitten
 ////////////////////////////////
 
+for (let i=0; i<20; i++) {
+    console.log("Love me, pet me! HSSSSSS!");
+}
+
+
+const kittyTalk = [
+    "...human...why you taking pictures of me?...",
+    "...the catnip made me do it...",
+    "...why does the red dot always get away..."
+]
+
+for (let i=0; i<kittyTalk.length; i++) {
+    if (i%2 === 0) {
+        let meow = Math.floor(Math.random() * kittyTalk.length);
+        console.log(kittyTalk[meow]); 
+    }
+}
 
 ////////////////////////////////
 //  Find the Median
