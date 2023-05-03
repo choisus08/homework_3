@@ -2,7 +2,7 @@
 // Easy Going
 ////////////////////////////////
 
-for (i=1; i<21; i++) {
+for (let i=1; i<21; i++) {
     console.log(i);
 }
 
@@ -10,7 +10,7 @@ for (i=1; i<21; i++) {
 // Get Even
 ////////////////////////////////
 
-for (i=0; i<201; i++) {
+for (let i=0; i<201; i++) {
     if (i % 2 === 0) {
         console.log(i);
     }
@@ -19,7 +19,7 @@ for (i=0; i<201; i++) {
 // Fizz Buzz
 ////////////////////////////////
 
-for (i=1; i<101; i++) {
+for (let i=1; i<101; i++) {
     if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log('FizzBuzz');
     }else if (i % 3 === 0) {
@@ -122,12 +122,28 @@ whereIsWaldo[1][2] = "No One";
 console.log(whereIsWaldo);
 
 whereIsWaldo[2][1][1];
-console.log("Waldo");
+console.log("Waldo");  // ASK FOR HELP
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
 
+for (i=0; i<20; i++) {
+    console.log("Love me, pet me! HSSSSSS!");
+}
+
+
+const kittyTalk = [
+    "...human...why you taking pictures of me?...",
+    "...the catnip made me do it...",
+    "...why does the red dot always get away..."
+]
+
+for (i=0; i<kittyTalk.length; i++) {
+    if (i%2 === 0); {
+        console.log(kittyTalk); 
+    }
+}
 
 ////////////////////////////////
 //  Find the Median
