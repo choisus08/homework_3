@@ -121,29 +121,13 @@ console.log(whereIsWaldo);
 whereIsWaldo[1][2] = "No One";
 console.log(whereIsWaldo);
 
-whereIsWaldo[2][1][1];
-console.log("Waldo");  // ASK FOR HELP
+console.log(whereIsWaldo[2][1][1]);  
+
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
 
-for (i=0; i<20; i++) {
-    console.log("Love me, pet me! HSSSSSS!");
-}
-
-
-const kittyTalk = [
-    "...human...why you taking pictures of me?...",
-    "...the catnip made me do it...",
-    "...why does the red dot always get away..."
-]
-
-for (i=0; i<kittyTalk.length; i++) {
-    if (i%2 === 0); {
-        console.log(kittyTalk); 
-    }
-}
 
 ////////////////////////////////
 //  Find the Median
