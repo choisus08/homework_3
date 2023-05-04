@@ -96,8 +96,11 @@ console.log(favMovies);
 favMovies.splice(14, 1, "Avatar");
 console.log(favMovies);
 
-const favMovies2 = favMovies.slice(10);
-console.log(favMovies2);
+const lastHalfFav = favMovies.slice(10);
+console.log(lastHalfFav);
+
+const lastHalfCopy = lastHalfFav;
+console.log(lastHalfCopy); 
 
 console.log(favMovies.indexOf('Fast and Furious')); 
 // output will be -1 when trying to fetch something in an array that doesn't exist.
@@ -121,16 +124,12 @@ console.log(whereIsWaldo);
 whereIsWaldo[1][2] = "No One";
 console.log(whereIsWaldo);
 
-console.log(whereIsWaldo[2][1][1]);  
+console.log(whereIsWaldo[2][1][1]); 
 
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
-
-for (let i=0; i<20; i++) {
-    console.log("Love me, pet me! HSSSSSS!");
-}
 
 
 const kittyTalk = [
@@ -139,15 +138,47 @@ const kittyTalk = [
     "...why does the red dot always get away..."
 ]
 
-for (let i=0; i<kittyTalk.length; i++) {
+
+for (let i=0; i<20; i++) {
     if (i%2 === 0) {
         let meow = Math.floor(Math.random() * kittyTalk.length);
         console.log(kittyTalk[meow]); 
+    }else {
+        console.log("Love me, pet me! HSSSSSS!");
     }
+
 }
+
 
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// const sortNums = nums.sort();
+// let middleIndex = Math.floor(nums.length/2);
+// let median;
+
+// if (nums.length % 2 !== 0) {
+//      median = nums[middleIndex];
+//     console.log(median);
+// } else {
+//     median = (nums[middleIndex] + nums[middleIndex - 1]/2);
+//     console.log(median);
+// }
+
+
+const sortNums = nums.sort();
+let middleIndex = Math.floor(sortNums.length/2);
+let median;
+
+if (nums.length % 2 !== 0) {
+     median = sortNums[middleIndex];
+    console.log(median);
+} else {
+    median = (sortNums[middleIndex] + sortNums[middleIndex - 1]/2);
+    console.log(median);
+}
+
 
 
