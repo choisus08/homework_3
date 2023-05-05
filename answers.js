@@ -157,10 +157,9 @@ for (let i=0; i<20; i++) {
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 const sortNums = nums.sort();
 let middleIndex = Math.floor(sortNums.length/2);
-let median;
 
 if (nums.length % 2 !== 0) {
-     median = sortNums[middleIndex];
+     let median = sortNums[middleIndex];
     console.log(median);
 } else {
     median = (sortNums[middleIndex] + sortNums[middleIndex - 1]/2);
